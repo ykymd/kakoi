@@ -15,6 +15,7 @@
 	UINavigationController *navController_;
 
 	CCDirectorIOS	*director_;							// weak ref
+    int DPI;
 }
 
 @property (nonatomic, retain) UIWindow *window;

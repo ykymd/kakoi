@@ -35,7 +35,7 @@
 	director_.wantsFullScreenLayout = YES;
 
 	// Display FSP and SPF
-	[director_ setDisplayStats:YES];
+	//[director_ setDisplayStats:YES];
 
 	// set FPS at 60
 	[director_ setAnimationInterval:1.0/60];
@@ -73,7 +73,7 @@
 	[CCTexture2D PVRImagesHavePremultipliedAlpha:YES];
 
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
-	[director_ pushScene: [IntroLayer scene]]; 
+	[director_ pushScene: [IntroLayer scene]];
 
 	
 	// Create a Navigation Controller with the Director
@@ -81,11 +81,22 @@
 	navController_.navigationBarHidden = YES;
 	
 	// set the Navigation Controller as the root view controller
-//	[window_ addSubview:navController_.view];	// Generates flicker.
+    [window_ addSubview:navController_.view];	// Generates flicker.
+    //window_.rootViewController = viewController; //GameCenter対応
 	[window_ setRootViewController:navController_];
 	
 	// make main window visible
 	[window_ makeKeyAndVisible];
+    
+    //GameCenterへログインする
+    [[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:^(NSError *error){
+        if ( error != nil ) {
+            // エラー処理
+            NSLog(@"error %@",error);
+        } else {
+            // 正常にログインできた場合
+        }
+    }];
 	
 	return YES;
 }

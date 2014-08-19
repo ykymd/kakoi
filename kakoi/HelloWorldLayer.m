@@ -40,65 +40,35 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
-		
-		// create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
+		CCSprite *ball = [CCSprite spriteWithFile:@"ball1.png"];
+        ball.position = ccp(250, 220);
+        [self addChild:ball];
+        
+        CCLabelTTF *label = [CCLabelTTF labelWithString:@"TestTestTest" fontName:@"AppleGothic" fontSize:24];
+        label.position = ccp(250, 120);
+        [self addChild:label];
+        
+        CCRotateBy *rotateBy = [CCRotateBy actionWithDuration:3 angle:360];
+        [ball runAction:rotateBy];
 
-		// ask director for the window size
-		CGSize size = [[CCDirector sharedDirector] winSize];
-	
-		// position the label on the center of the screen
-		label.position =  ccp( size.width /2 , size.height/2 );
-		
-		// add the label as a child to this Layer
-		[self addChild: label];
-		
-		
-		
-		//
-		// Leaderboards and Achievements
-		//
-		
-		// Default font size will be 28 points.
-		[CCMenuItemFont setFontSize:28];
-		
-		// Achievement Menu Item using blocks
-		CCMenuItem *itemAchievement = [CCMenuItemFont itemWithString:@"Achievements" block:^(id sender) {
-			
-			
-			GKAchievementViewController *achivementViewController = [[GKAchievementViewController alloc] init];
-			achivementViewController.achievementDelegate = self;
-			
-			AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-			
-			[[app navController] presentModalViewController:achivementViewController animated:YES];
-			
-			[achivementViewController release];
-		}
-									   ];
-
-		// Leaderboard Menu Item using blocks
-		CCMenuItem *itemLeaderboard = [CCMenuItemFont itemWithString:@"Leaderboard" block:^(id sender) {
-			
-			
-			GKLeaderboardViewController *leaderboardViewController = [[GKLeaderboardViewController alloc] init];
-			leaderboardViewController.leaderboardDelegate = self;
-			
-			AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-			
-			[[app navController] presentModalViewController:leaderboardViewController animated:YES];
-			
-			[leaderboardViewController release];
-		}
-									   ];
-		
-		CCMenu *menu = [CCMenu menuWithItems:itemAchievement, itemLeaderboard, nil];
-		
-		[menu alignItemsHorizontallyWithPadding:20];
-		[menu setPosition:ccp( size.width/2, size.height/2 - 50)];
-		
-		// Add the menu to the layer
-		[self addChild:menu];
+        
+        CCMenuItemImage *menu1 = [CCMenuItemImage itemWithNormalImage:@"start.png" selectedImage:@"stat.png"
+                                                         block:^(id sender){
+                                                             CCLOG(@"menu1 tap!");
+                                                         }];
+        CCMenuItemImage *menu2 = [CCMenuItemImage itemWithNormalImage:@"howtoplay.png" selectedImage:@"howtoplay.png"
+                                                         block:^(id sender){
+                                                             CCLOG(@"menu2 tap!");
+                                                         }];
+        CCMenuItemImage *menu3 = [CCMenuItemImage itemWithNormalImage:@"ranking.png" selectedImage:@"ranking.png"
+                                                         block:^(id sender){
+                                                             CCLOG(@"menu3 tap!");
+                                                         }];
+        CCMenu *menu = [CCMenu menuWithItems:menu1,menu2,menu3, nil];
+        [menu alignItemsVerticallyWithPadding:20.0];
+        CGSize winSize = [[CCDirector sharedDirector] winSize];
+        menu.position = CGPointMake(winSize.width / 2, winSize.height /2 );
+        [self addChild:menu];
 
 	}
 	return self;

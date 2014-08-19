@@ -23,6 +23,7 @@
  * THE SOFTWARE.
  */
 
+#import <GameKit/GameKit.h> //何故かプロトコルを認識しないのでインポートした
 
 #import "ccConfig.h"
 #import "ccTypes.h"
@@ -81,7 +82,7 @@ and when to execute the Scenes.
   - GL_COLOR_ARRAY is enabled
   - GL_TEXTURE_COORD_ARRAY is enabled
 */
-@interface CCDirector : CC_VIEWCONTROLLER
+@interface CCDirector : CC_VIEWCONTROLLER <GKLeaderboardViewControllerDelegate>
 {
 	// internal timer
 	NSTimeInterval animationInterval_;
@@ -338,6 +339,11 @@ and when to execute the Scenes.
 // helper
 /** creates the Stats labels */
 -(void) createStatsLabel;
+
+// GameCenter
+-(IBAction)showBoard;
+-(void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController;
+
 @end
 
 // optimization. Should only be used to read it. Never to write it.

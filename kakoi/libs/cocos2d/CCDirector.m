@@ -633,5 +633,23 @@ static CCDirector *_sharedDirector = nil;
 	[FPSLabel_ setPosition: CC_DIRECTOR_STATS_POSITION ];
 }
 
+
+//リーダーボードを立ち上げる
+-(IBAction)showBoard
+{
+    GKLeaderboardViewController *leaderboardController = [[GKLeaderboardViewController alloc] init];
+    if (leaderboardController != nil)
+    {
+        leaderboardController.leaderboardDelegate = self;
+        [self presentModalViewController: leaderboardController animated: YES];
+    }
+}
+
+//リーダーボードで完了を押した時に呼ばれる
+- (void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 @end
 
