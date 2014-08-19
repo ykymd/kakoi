@@ -1,2 +1,4 @@
-KAKOI_for_iOS
+KAKOI_iOS
 ===============
+
+iOS向けアプリ「KAKOI」のソースコードです
