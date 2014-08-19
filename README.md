@@ -1,4 +1,4 @@
-#KAKOI_iOS
+#KAKOI for iOS
 
 iOS向けアプリ「KAKOI」のソースコードです
 
