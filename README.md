@@ -18,7 +18,11 @@ http://mis-w.blogspot.jp/2013/03/kakoi.html
 
 ##制作者
 ディレクター:minmin(47代)
+
 プログラム:yuki(47代)
+
 BGM:Rocky(47代)
+
 SE:Rocky(47代)&minmin(47代)
+
 CG:ushida(外部委託)
