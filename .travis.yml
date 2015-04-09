@@ -1,0 +1,4 @@
+language: objective-c
+
+script:
+  - xctool -workspace kakoi.xcworkspace -scheme KAKOI -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
