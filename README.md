@@ -9,7 +9,7 @@ iOS向けアプリ「KAKOI」のソースコードです
 
 ##アプリURL
 
-現在未公開です。
+http://AppStore.com/KAKOI
 
 ##遊び方
 
