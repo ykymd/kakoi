@@ -229,8 +229,8 @@ NSComparisonResult sortByPriority(id first, id second, void *context)
 	locked = YES;
 
 	// optimization to prevent a mutable copy when it is not necessary
-	unsigned int targetedHandlersCount = [targetedHandlers count];
-	unsigned int standardHandlersCount = [standardHandlers count];
+	unsigned int targetedHandlersCount = (unsigned int)[targetedHandlers count];
+	unsigned int standardHandlersCount = (unsigned int)[standardHandlers count];
 	BOOL needsMutableSet = (targetedHandlersCount && standardHandlersCount);
 
 	mutableTouches = (needsMutableSet ? [touches mutableCopy] : touches);
