@@ -25,4 +25,4 @@ BGM:Rocky(47代)
 
 SE:Rocky(47代)&minmin(47代)
 
-CG:ushida(外部委託)
+CG:ushida
