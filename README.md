@@ -17,12 +17,12 @@ http://AppStore.com/KAKOI
 http://mis-w.blogspot.jp/2013/03/kakoi.html
 
 ##制作者
-ディレクター:minmin(47代)
+ディレクター:minmin
 
-プログラム:yuki(47代)
+プログラム:yuki
 
-BGM:Rocky(47代)
+BGM:Rocky
 
-SE:Rocky(47代)&minmin(47代)
+SE:Rocky&minmin
 
-CG:ushida(外部委託)
+CG:ushida
