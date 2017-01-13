@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B3B0E81E291A04006FB228 /* bg_game-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B3B0E71E291A04006FB228 /* bg_game-ipad.png */; };
+		37B3B0EA1E291A0E006FB228 /* bg_game-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37B3B0E91E291A0E006FB228 /* bg_game-ipad@2x.png */; };
 		B61C85CA18C6F542006877C9 /* kakoi2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B61C85C918C6F542006877C9 /* kakoi2.mp3 */; };
 		B61C85CE18C7297D006877C9 /* title.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B61C85CD18C7297D006877C9 /* title.mp3 */; };
 		B61DA1AD17B08DA2008972A7 /* CreditLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B61DA1AC17B08DA2008972A7 /* CreditLayer.m */; };
@@ -90,8 +92,6 @@
 		B69C214B18005BEA000CAA07 /* ranking_push-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C214A18005BEA000CAA07 /* ranking_push-ipad@2x.png */; };
 		B69C214D18005DB8000CAA07 /* ranking-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C214C18005DB8000CAA07 /* ranking-ipad@2x.png */; };
 		B69C214F18005DEF000CAA07 /* start1_push-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C214E18005DEF000CAA07 /* start1_push-ipad@2x.png */; };
-		B69C215218005F68000CAA07 /* bg_game-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C215018005F68000CAA07 /* bg_game-ipad.png */; };
-		B69C215318005F68000CAA07 /* bg_game-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C215118005F68000CAA07 /* bg_game-ipad@2x.png */; };
 		B69C21561800606B000CAA07 /* num60-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C21541800606B000CAA07 /* num60-ipad.png */; };
 		B69C21571800606B000CAA07 /* num60-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C21551800606B000CAA07 /* num60-ipad@2x.png */; };
 		B69C215C18006117000CAA07 /* combo1-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B69C215818006117000CAA07 /* combo1-ipad.png */; };
@@ -248,6 +248,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B3B0E71E291A04006FB228 /* bg_game-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_game-ipad.png"; sourceTree = "<group>"; };
+		37B3B0E91E291A0E006FB228 /* bg_game-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_game-ipad@2x.png"; sourceTree = "<group>"; };
 		B61C85C918C6F542006877C9 /* kakoi2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kakoi2.mp3; sourceTree = "<group>"; };
 		B61C85CD18C7297D006877C9 /* title.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = title.mp3; sourceTree = "<group>"; };
 		B61DA1AB17B08DA2008972A7 /* CreditLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditLayer.h; sourceTree = "<group>"; };
@@ -335,8 +337,6 @@
 		B69C214A18005BEA000CAA07 /* ranking_push-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ranking_push-ipad@2x.png"; path = "kakoi/ranking_push-ipad@2x.png"; sourceTree = SOURCE_ROOT; };
 		B69C214C18005DB8000CAA07 /* ranking-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranking-ipad@2x.png"; sourceTree = "<group>"; };
 		B69C214E18005DEF000CAA07 /* start1_push-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start1_push-ipad@2x.png"; sourceTree = "<group>"; };
-		B69C215018005F68000CAA07 /* bg_game-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_game-ipad.png"; path = "../../../../Google ドライブ/misw-doroken/KAKOI/画像素材/調整版/1024×600/bg_game-ipad.png"; sourceTree = "<group>"; };
-		B69C215118005F68000CAA07 /* bg_game-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg_game-ipad@2x.png"; path = "../../../../Google ドライブ/misw-doroken/KAKOI/画像素材/調整版/1024×600/bg_game-ipad@2x.png"; sourceTree = "<group>"; };
 		B69C21541800606B000CAA07 /* num60-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "num60-ipad.png"; sourceTree = "<group>"; };
 		B69C21551800606B000CAA07 /* num60-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "num60-ipad@2x.png"; sourceTree = "<group>"; };
 		B69C215818006117000CAA07 /* combo1-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "combo1-ipad.png"; sourceTree = "<group>"; };
@@ -1129,8 +1129,8 @@
 			children = (
 				B69C212E1800599A000CAA07 /* bg_title-ipad.png */,
 				B69C212F1800599A000CAA07 /* bg_title-ipad@2x.png */,
-				B69C215018005F68000CAA07 /* bg_game-ipad.png */,
-				B69C215118005F68000CAA07 /* bg_game-ipad@2x.png */,
+				37B3B0E71E291A04006FB228 /* bg_game-ipad.png */,
+				37B3B0E91E291A0E006FB228 /* bg_game-ipad@2x.png */,
 				B69DC58217EB53AA00154CEE /* license.png */,
 				B69DC58417EB565E00154CEE /* license@2x.png */,
 				B69C211817FC666D000CAA07 /* btn_license.png */,
@@ -1276,7 +1276,7 @@
 		B6DA6B291769987800BE5197 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				TargetAttributes = {
 					B6DA6B301769987800BE5197 = {
 						DevelopmentTeam = NDSCPUS9WB;
@@ -1314,6 +1314,7 @@
 				B6DA6D1E1769B47000BE5197 /* howtoplay@2x.png in Resources */,
 				B6DA6D201769B47000BE5197 /* ranking@2x.png in Resources */,
 				B69C21311800599A000CAA07 /* bg_title-ipad@2x.png in Resources */,
+				37B3B0EA1E291A0E006FB228 /* bg_game-ipad@2x.png in Resources */,
 				B69C214F18005DEF000CAA07 /* start1_push-ipad@2x.png in Resources */,
 				B6DA6D211769B47000BE5197 /* start.png in Resources */,
 				B6DA6D1D1769B47000BE5197 /* howtoplay.png in Resources */,
@@ -1327,6 +1328,7 @@
 				B66B03D71798099B0014006E /* Icon-Small-50.png in Resources */,
 				B69C217118006817000CAA07 /* ball2-ipad@2x.png in Resources */,
 				B66B03D81798099B0014006E /* Icon-Small-50@2x.png in Resources */,
+				37B3B0E81E291A04006FB228 /* bg_game-ipad.png in Resources */,
 				B66B03D91798099B0014006E /* Icon-Small.png in Resources */,
 				B69DC78917EC643300154CEE /* Icon-Small-50@2x.png in Resources */,
 				B69C213C18005AC1000CAA07 /* start-ipad.png in Resources */,
@@ -1396,7 +1398,6 @@
 				B657995517B7527B001498C5 /* howtoplay_push.png in Resources */,
 				B69C2128180053EA000CAA07 /* Icon-72.png in Resources */,
 				B657995617B7527B001498C5 /* ranking_push.png in Resources */,
-				B69C215218005F68000CAA07 /* bg_game-ipad.png in Resources */,
 				B657995717B7527B001498C5 /* start1_push.png in Resources */,
 				B69C214918005B9F000CAA07 /* howtoplay_push-ipad@2x.png in Resources */,
 				B69C216E18006817000CAA07 /* ball1-ipad.png in Resources */,
@@ -1409,7 +1410,6 @@
 				B69C213D18005AC1000CAA07 /* start-ipad@2x.png in Resources */,
 				B628AC8417C24BD900D94F7B /* combo1.png in Resources */,
 				B69C214D18005DB8000CAA07 /* ranking-ipad@2x.png in Resources */,
-				B69C215318005F68000CAA07 /* bg_game-ipad@2x.png in Resources */,
 				B69C217218006817000CAA07 /* ball3-ipad.png in Resources */,
 				B628AC8517C24BD900D94F7B /* combo2.png in Resources */,
 				B628AC8817C24C0A00D94F7B /* combo1@2x.png in Resources */,
@@ -1571,7 +1571,9 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yamada Yuki (5YN47DMMM9)";
@@ -1607,7 +1609,9 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Yamada Yuki (8PNJ3N88L7)";
@@ -1645,7 +1649,7 @@
 				GCC_PREFIX_HEADER = kakoi/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"kakoi/libs/kazmath/include\"";
 				INFOPLIST_FILE = kakoi/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
@@ -1670,7 +1674,7 @@
 				GCC_PREFIX_HEADER = kakoi/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"kakoi/libs/kazmath/include\"";
 				INFOPLIST_FILE = kakoi/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
