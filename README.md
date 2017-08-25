@@ -17,12 +17,8 @@ http://AppStore.com/KAKOI
 http://mis-w.blogspot.jp/2013/03/kakoi.html
 
 ## 制作者
-ディレクター:minmin
-
-プログラム:yuki
-
-BGM:r0y
-
-SE:r0y&minmin
-
-CG:ushida
+- ディレクター:minmin
+- プログラム:yuki
+- BGM:r0y
+- SE:r0y&minmin
+- CG:ushida
